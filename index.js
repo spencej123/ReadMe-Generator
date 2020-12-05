@@ -38,7 +38,7 @@ const promtUser = () =>
     },
     {
       type: "input",
-      name: "Contact/Email",
+      name: "Contact",
       message: "How can you be contacted?",
     },
   ]);
@@ -81,7 +81,7 @@ const generateHTML = (answers) =>
     <p>${answers.Github}</p>
 
     <h2>Contact</h2>
-    <p>${answers.Contact / Email}</p>
+    <p>${answers.Contact}</p>
   </body>
 </html>`;
 promtUser()

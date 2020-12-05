@@ -36,4 +36,9 @@ const promtUser = () =>
       name: "github username",
       message: "What is your github?",
     },
+    {
+      type: "input",
+      name: "contact/email",
+      message: "How can you be contacted?",
+    },
   ]);

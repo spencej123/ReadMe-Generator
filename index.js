@@ -8,7 +8,7 @@ const promtUser = () =>
   inquirer.prompt([
     {
       type: "input",
-      name: "Project Title",
+      name: "Project-Title",
       message: "What is the name of the project?",
     },
     {
@@ -23,22 +23,22 @@ const promtUser = () =>
     },
     {
       type: "input",
-      name: "installation",
+      name: "Installation",
       message: "What is required for Installation?",
     },
     {
       type: "input",
-      name: "license",
+      name: "License",
       message: "Which Lisence is this project under?",
     },
     {
       type: "input",
-      name: "github username",
+      name: "Github-username",
       message: "What is your github?",
     },
     {
       type: "input",
-      name: "contact/email",
+      name: "Contact/Email",
       message: "How can you be contacted?",
     },
   ]);
@@ -53,35 +53,35 @@ const generateHTML = (answers) =>
   </head>
   <body>
     <h1>Project Title</h1>
-    <p></p>
+    <p>${answers.Project - Title}</p>
 
     <hr />
 
     <h2>Description</h2>
-    <p></p>
+    <p>${answers.Description}</p>
 
     <hr />
 
     <h2>Usage</h2>
-    <p></p>
+    <p>${answers.Usage}</p>
 
     <hr />
 
     <h2>Installation</h2>
-    <p></p>
+    <p>${answers.Installation}</p>
 
     <hr />
 
     <h2>Lisence</h2>
-    <p></p>
+    <p>${answers.Lisence}</p>
 
     <hr />
 
     <h2>GitHub</h2>
-    <p></p>
+    <p>${answers.Github - username}</p>
 
     <h2>Contact</h2>
-    <p></p>
+    <p>${answers.Contact / Email}</p>
   </body>
 </html>`;
 promtUser()

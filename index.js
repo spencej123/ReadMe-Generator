@@ -8,7 +8,7 @@ const promtUser = () =>
   inquirer.prompt([
     {
       type: "input",
-      name: "Project-Title",
+      name: "Title",
       message: "What is the name of the project?",
     },
     {
@@ -33,7 +33,7 @@ const promtUser = () =>
     },
     {
       type: "input",
-      name: "Github-username",
+      name: "Github",
       message: "What is your github?",
     },
     {
@@ -53,7 +53,7 @@ const generateHTML = (answers) =>
   </head>
   <body>
     <h1>Project Title</h1>
-    <p>${answers.Project - Title}</p>
+    <p>${answers.Title}</p>
 
     <hr />
 
@@ -78,7 +78,7 @@ const generateHTML = (answers) =>
     <hr />
 
     <h2>GitHub</h2>
-    <p>${answers.Github - username}</p>
+    <p>${answers.Github}</p>
 
     <h2>Contact</h2>
     <p>${answers.Contact / Email}</p>

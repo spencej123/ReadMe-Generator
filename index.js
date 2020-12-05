@@ -45,25 +45,25 @@ const promtUser = () =>
 
 const generateREADME = (answers) =>
   ` 
-    ##Project Title
+    # Project Title
     ${answers.Title}
 
-    ##Description
+    # Description
     ${answers.Description}
 
-    ##Usage
+    # Usage
     ${answers.Usage}
 
     ##Installation
     ${answers.Installation}
 
-    ##Lisence
+    # Lisence
     ${answers.Lisence}
 
-    ##GitHub
+    # GitHub
     ${answers.Github}
 
-    ##Contact
+    # Contact
     ${answers.Contact}
   `;
 promtUser()

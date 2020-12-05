@@ -1,22 +1,15 @@
- 
-    ##Project Title
-    ba
-
-    ##Description
-    ba
-
-    ##Usage
-    ba
-
+ #Project Title
+    ok
+    # Description
+    ok
+    # Usage
+    ok
     ##Installation
-    ba
-
-    ##Lisence
-    undefined
-
-    ##GitHub
-    ba
-
-    ##Contact
-    ba
+    ok
+    # Lisence
+    ok
+    # GitHub
+    ok
+    # Contact
+    ok
   

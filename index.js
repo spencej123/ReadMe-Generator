@@ -28,8 +28,8 @@ const promtUser = () =>
     },
     {
       type: "input",
-      name: "License",
-      message: "Which Lisence is this project under?",
+      name: "Lisence",
+      message: "Which License is this project under?",
     },
     {
       type: "input",
@@ -44,28 +44,22 @@ const promtUser = () =>
   ]);
 
 const generateREADME = (answers) =>
-  ` 
-    # Project Title
+  ` #Project Title
     ${answers.Title}
-
     # Description
     ${answers.Description}
-
     # Usage
     ${answers.Usage}
-
     ##Installation
     ${answers.Installation}
-
     # Lisence
     ${answers.Lisence}
-
     # GitHub
     ${answers.Github}
-
     # Contact
     ${answers.Contact}
   `;
+
 promtUser()
   .then((answers) => writeFileAsync("README.md", generateREADME(answers)))
   .then(() => console.log("README written"))

@@ -44,46 +44,28 @@ const promtUser = () =>
   ]);
 
 const generateREADME = (answers) =>
-  `<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Project Title</h1>
-    <p>${answers.Title}</p>
+  ` 
+    ##Project Title
+    ${answers.Title}
 
-    <hr />
+    ##Description
+    ${answers.Description}
 
-    <h2>Description</h2>
-    <p>${answers.Description}</p>
+    ##Usage
+    ${answers.Usage}
 
-    <hr />
+    ##Installation
+    ${answers.Installation}
 
-    <h2>Usage</h2>
-    <p>${answers.Usage}</p>
+    ##Lisence
+    ${answers.Lisence}
 
-    <hr />
+    ##GitHub
+    ${answers.Github}
 
-    <h2>Installation</h2>
-    <p>${answers.Installation}</p>
-
-    <hr />
-
-    <h2>Lisence</h2>
-    <p>${answers.Lisence}</p>
-
-    <hr />
-
-    <h2>GitHub</h2>
-    <p>${answers.Github}</p>
-
-    <h2>Contact</h2>
-    <p>${answers.Contact}</p>
-  </body>
-</html>`;
+    ##Contact
+    ${answers.Contact}
+  `;
 promtUser()
   .then((answers) => writeFileAsync("README.md", generateREADME(answers)))
   .then(() => console.log("README written"))

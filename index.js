@@ -43,7 +43,7 @@ const promtUser = () =>
     },
   ]);
 
-const generateReadME = (answers) =>
+const generateREADME = (answers) =>
   `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -85,6 +85,6 @@ const generateReadME = (answers) =>
   </body>
 </html>`;
 promtUser()
-  .then((answers) => writeFileAsync("README.md", generateReadMe(answers)))
+  .then((answers) => writeFileAsync("README.md", generateREADME(answers)))
   .then(() => console.log("README written"))
   .catch((err) => console.log(err));

@@ -26,4 +26,9 @@ const promtUser = () =>
       name: "installation",
       message: "What is required for Installation?",
     },
+    {
+      type: "input",
+      name: "license",
+      message: "Which Lisence is this project under?",
+    },
   ]);

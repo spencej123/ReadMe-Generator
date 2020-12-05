@@ -31,4 +31,9 @@ const promtUser = () =>
       name: "license",
       message: "Which Lisence is this project under?",
     },
+    {
+      type: "input",
+      name: "github username",
+      message: "What is your github?",
+    },
   ]);

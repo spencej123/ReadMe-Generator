@@ -43,10 +43,48 @@ const promtUser = () =>
     },
   ]);
 
-  const generateHTML = (answers) =>;
+const generateHTML = (answers) =>
+  `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Project Title</h1>
+    <p></p>
 
-  promtUser()
-      .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
-      .then(() => console.log('index.html written'))
-      .catch((err) => console.log(err));
-  
+    <hr />
+
+    <h2>Description</h2>
+    <p></p>
+
+    <hr />
+
+    <h2>Usage</h2>
+    <p></p>
+
+    <hr />
+
+    <h2>Installation</h2>
+    <p></p>
+
+    <hr />
+
+    <h2>Lisence</h2>
+    <p></p>
+
+    <hr />
+
+    <h2>GitHub</h2>
+    <p></p>
+
+    <h2>Contact</h2>
+    <p></p>
+  </body>
+</html>`;
+promtUser()
+  .then((answers) => writeFileAsync("index.html", generateHTML(answers)))
+  .then(() => console.log("index.html written"))
+  .catch((err) => console.log(err));

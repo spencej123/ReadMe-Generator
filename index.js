@@ -11,5 +11,10 @@ const promtUser = () =>
       name: "Project Title",
       message: "What is the name of the project",
     },
+    {
+      type: "input",
+      name: "Description",
+      message: "Describe this project",
+    },
     {},
   ]);

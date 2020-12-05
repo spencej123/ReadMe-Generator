@@ -1,15 +1,21 @@
- #Project Title
-    ok
+ # Project Title
+    README Generator
+    
     # Description
-    ok
+    This Project creates a README quickly
+    
     # Usage
-    ok
-    ##Installation
-    ok
+    Developers who need an easy way to make a README
+    
+    #Installation
+    npm init nmp inquirer
+    
     # Lisence
-    ok
+    Spencer Johnson
+    
     # GitHub
-    ok
+    https://github.com/spencej123/ReadMe-Generator
+    
     # Contact
-    ok
+    spencer.johnson123@hotmail.com
   

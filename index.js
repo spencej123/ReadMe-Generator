@@ -44,18 +44,24 @@ const promtUser = () =>
   ]);
 
 const generateREADME = (answers) =>
-  ` #Project Title
+  ` # Project Title
     ${answers.Title}
+    
     # Description
     ${answers.Description}
+    
     # Usage
     ${answers.Usage}
-    ##Installation
+    
+    #Installation
     ${answers.Installation}
+    
     # Lisence
     ${answers.Lisence}
+    
     # GitHub
     ${answers.Github}
+    
     # Contact
     ${answers.Contact}
   `;

@@ -42,3 +42,11 @@ const promtUser = () =>
       message: "How can you be contacted?",
     },
   ]);
+
+  const generateHTML = (answers) =>;
+
+  promtUser()
+      .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
+      .then(() => console.log('index.html written'))
+      .catch((err) => console.log(err));
+  
